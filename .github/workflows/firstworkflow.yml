@@ -1,0 +1,15 @@
+name: Print Date Time
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  print-datetime:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print current date and time
+        run: |
+          echo "Current Date and Time:"
+          date
